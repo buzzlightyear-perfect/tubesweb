@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review & Testimonial - 2 GOOD COURSE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .star { color: #FDD835; font-size: 16px; margin-right: 2px; }
+        .review-card { transition: all 0.3s ease; }
+        .review-card:hover { transform: translateY(-8px); box-shadow: 0 12px 24px rgba(82,183,136,0.15); }
+        .badge-category { display: inline-block; background: rgba(82,183,136,0.2); color: #52B788; padding: 6px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; margin-top: 8px; }
+        .avatar { width: 56px; height: 56px; border-radius: 50%; background: linear-gradient(135deg, #52B788, #2D6A4F); display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; font-weight: bold; }
+        .quote-icon { font-size: 32px; color: rgba(82,183,136,0.3); margin-bottom: 12px; }
+        @keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .review-card { animation: slideUp 0.5s ease; }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <header>
+        <div class="flex justify-between items-center bg-[#1B3A2D] py-5 px-5 md:px-8 shadow-md">
+            <a href="home.html" class="text-white font-bold text-xl hover:opacity-80 transition">2 GOOD COURSE</a>
+            <nav class="flex gap-3 text-white">
+                <a href="home.html" class="bg-[#2D6A4F] px-4 py-2 rounded-lg text-sm font-medium">Home</a>
+                <a href="login.html" class="bg-[#2D6A4F] px-4 py-2 rounded-lg text-sm font-medium">Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="bg-gradient-to-br from-[#1B3A2D] via-[#2D6A4F] to-[#52B788] py-16 md:py-24 px-5 md:px-8">
+        <div class="text-white text-center max-w-3xl mx-auto">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Apa Kata Alumni Kami?</h1>
+            <p class="text-lg md:text-xl text-gray-100 mb-8">Dengarkan kisah sukses dari ribuan students yang telah belajar dan berkembang bersama 2 GOOD COURSE</p>
+            <div class="grid grid-cols-3 gap-6 md:gap-8 mt-12">
+                <div><div class="text-3xl font-bold text-[#52B788]">4.8★</div><p class="text-sm text-gray-200">Rating Rata-rata</p></div>
+                <div><div class="text-3xl font-bold text-[#52B788]">2500+</div><p class="text-sm text-gray-200">Alumni Puas</p></div>
+                <div><div class="text-3xl font-bold text-[#52B788]">92%</div><p class="text-sm text-gray-200">Rekomendasi Rate</p></div>
+            </div>
+        </div>
+    </section>
+
+    <main class="py-12 md:py-20 px-5 md:px-8">
+        <div class="max-w-6xl mx-auto">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <div class="review-card">
+                    <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-[#52B788] h-full flex flex-col">
+                        <div class="quote-icon">"</div>
+                        <p class="text-gray-700 text-sm leading-relaxed mb-4 flex-grow">Saya mahasiswa semester 3 dan sebelumnya sangat blank tentang web development. Kursus Web Development dari 2 GOOD COURSE explain semuanya dengan sangat jelas dan mudah dipahami. Mentor saya sangat responsif, dan project-project yang diberikan benar-benar relevant dengan industry. Sekarang saya udah bisa bikin aplikasi web yang bagus!</p>
+                        <div>
+                            <div class="flex gap-1 mb-4"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+                            <div class="flex items-center gap-3">
+                                <div class="avatar">R</div>
+                                <div><h3 class="font-semibold text-gray-800">Rina Wijaya</h3><p class="text-xs text-gray-500">Mahasiswa Semester 3, UNPAR</p></div>
+                            </div>
+                            <span class="badge-category">Mahasiswa</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-[#2D6A4F] h-full flex flex-col">
+                        <div class="quote-icon">"</div>
+                        <p class="text-gray-700 text-sm leading-relaxed mb-4 flex-grow">Habis lulus kuliah, saya merasa skill saya belum ready untuk masuk industri. Tapi setelah ikut bootcamp Full Stack Development di 2 GOOD COURSE, saya confidence berbeda sekali. Portfolio project saya yang dibuat selama bootcamp ini yang bikin saya diterima di perusahaan fintech favorit saya. Highly recommended!</p>
+                        <div>
+                            <div class="flex gap-1 mb-4"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+                            <div class="flex items-center gap-3">
+                                <div class="avatar">A</div>
+                                <div><h3 class="font-semibold text-gray-800">Ahmad Rizki</h3><p class="text-xs text-gray-500">Fresh Graduate, ITB</p></div>
+                            </div>
+                            <span class="badge-category">Fresh Graduate</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-[#52B788] h-full flex flex-col">
+                        <div class="quote-icon">"</div>
+                        <p class="text-gray-700 text-sm leading-relaxed mb-4 flex-grow">Sudah kerja sebagai front end developer selama 2 tahun, tapi saya merasa skill Vue.js saya kurang deep. Kursus Advanced Vue.js di 2 GOOD COURSE bantu saya level up dengan sangat signifikan. Sekarang saya lebih confident handle project yang complex dan udah nerapin di projek kerja saya.</p>
+                        <div>
+                            <div class="flex gap-1 mb-4"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+                            <div class="flex items-center gap-3">
+                                <div class="avatar">D</div>
+                                <div><h3 class="font-semibold text-gray-800">Doni Setiawan</h3><p class="text-xs text-gray-500">Front End Developer, PT Teknologi</p></div>
+                            </div>
+                            <span class="badge-category">Developer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-[#2D6A4F] h-full flex flex-col">
+                        <div class="quote-icon">"</div>
+                        <p class="text-gray-700 text-sm leading-relaxed mb-4 flex-grow">Saya designer yang pengen understand technical side dan belajar coding. Kursus UI/UX Design + Intro to Web Development di 2 GOOD COURSE super helpful! Sekarang saya bisa communicate dengan developer lebih baik dan understand feasibility sebelum design. Game changer untuk career saya!</p>
+                        <div>
+                            <div class="flex gap-1 mb-4"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+                            <div class="flex items-center gap-3">
+                                <div class="avatar">S</div>
+                                <div><h3 class="font-semibold text-gray-800">Siti Nurhaliza</h3><p class="text-xs text-gray-500">UI/UX Designer, StartUp Jakarta</p></div>
+                            </div>
+                            <span class="badge-category">Designer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-[#52B788] h-full flex flex-col">
+                        <div class="quote-icon">"</div>
+                        <p class="text-gray-700 text-sm leading-relaxed mb-4 flex-grow">Sebagai freelancer, saya perlu terus upgrade skill biar tetap competitive. Project-based learning di 2 GOOD COURSE perfect untuk gaya belajar saya. Saya bisa langsung apply ilmu untuk project client, dan hasilnya income saya naik 40% dalam 3 bulan. Invest terbaik untuk bisnis saya!</p>
+                        <div>
+                            <div class="flex gap-1 mb-4"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+                            <div class="flex items-center gap-3">
+                                <div class="avatar">T</div>
+                                <div><h3 class="font-semibold text-gray-800">Tedi Hermawan</h3><p class="text-xs text-gray-500">Full Stack Freelancer</p></div>
+                            </div>
+                            <span class="badge-category">Freelancer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-[#2D6A4F] h-full flex flex-col">
+                        <div class="quote-icon">"</div>
+                        <p class="text-gray-700 text-sm leading-relaxed mb-4 flex-grow">Self-taught developer di sini, tapi selalu ada yang terasa missing. Curriculum 2 GOOD COURSE sangat structured dan comprehensive. Setiap module dijelasin step-by-step, dan community support sangat helpful banget. Sekarang saya confident apply ke job yang sebelumnya kira-kira ga bisa. Terima kasih 2 GOOD COURSE!</p>
+                        <div>
+                            <div class="flex gap-1 mb-4"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+                            <div class="flex items-center gap-3">
+                                <div class="avatar">I</div>
+                                <div><h3 class="font-semibold text-gray-800">Iman Sutrisno</h3><p class="text-xs text-gray-500">Full Stack Web Developer</p></div>
+                            </div>
+                            <span class="badge-category">Developer</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <section class="bg-white py-12 md:py-16 px-5 md:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8">Bergabunglah dengan Ribuan Pelajar Sukses</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div><p class="text-4xl font-bold text-[#52B788]">2500+</p><p class="text-gray-600 mt-2">Alumni Aktif</p></div>
+                <div><p class="text-4xl font-bold text-[#52B788]">92%</p><p class="text-gray-600 mt-2">Merekomendasikan ke Teman</p></div>
+                <div><p class="text-4xl font-bold text-[#52B788]">4.8/5.0</p><p class="text-gray-600 mt-2">Rating Rata-rata</p></div>
+            </div>
+            <p class="text-gray-700 mt-12 max-w-2xl mx-auto leading-relaxed">Ribuan students dari berbagai background telah membuktikan bahwa 2 GOOD COURSE adalah platform pembelajaran terbaik untuk mengembangkan skill teknologi dan mempersiapkan karir di industri IT. Bergabunglah dengan mereka dan mulai perjalanan sukses Anda hari ini.</p>
+            <a href="#" class="inline-block mt-8 bg-[#52B788] hover:bg-[#2D6A4F] text-white px-8 py-3 rounded-lg font-semibold transition">Daftar Sekarang & Mulai Belajar</a>
+        </div>
+    </section>
+
+    <section class="bg-[#1B3A2D] py-12 md:py-16 px-5 md:px-8 text-center text-white">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Siap untuk transformasi karirmu?</h2>
+        <p class="text-lg text-gray-100 mb-8 max-w-2xl mx-auto">Jangan tunggu lagi, ribuan orang sedang berkembang bersama 2 GOOD COURSE</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="#" class="bg-[#52B788] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#3a9970] transition">Lihat Kursus</a>
+            <a href="#" class="bg-white text-[#1B3A2D] px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">Hubungi Kami</a>
+        </div>
+    </section>
+
+    <footer class="bg-[#1B3A2D] py-6 px-5 md:px-8">
+        <h1 class="text-white text-center font-bold text-lg">© 2026 2 GOOD COURSE</h1>
+    </footer>
+
+</body>
+</html>
