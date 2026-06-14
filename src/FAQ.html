@@ -1,23 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="./output.css" rel="stylesheet">
+    <title>FAQ - 2 GOOD COURSE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+        .accordion-item.active .accordion-content { max-height: 200px; }
+        .accordion-item.active .chevron { transform: rotate(180deg); }
+        .chevron { transition: transform 0.3s ease; }
+    </style>
 </head>
-<body>
-        <header>
-        <div class="flex justify-between bg-[#1B3A2D] py-7 px-5 shadow-xl/30">
-            <h2 class="text-white font-bold">2 GOOD COURSE</h2>
+<body class="bg-gray-50">
 
-            <nav class=" text-white">
-                <a href="login.html" class=" bg-[#2D6A4F] px-5 py-2 rounded-xl "  >Log in Member</a>
-                <a href="AboutUs.html" class=" bg-[#2D6A4F] px-5 py-2 rounded-xl " >About Us</a>
-            </nav>
+    <header class="flex justify-between items-center bg-[#1B3A2D] py-5 px-5 md:px-8 shadow-md">
+        <a href="home.html" class="text-white font-bold text-xl hover:opacity-80 transition">2 GOOD COURSE</a>
+        <nav class="flex gap-3">
+            <a href="home.html" class="bg-[#2D6A4F] text-white px-4 py-2 rounded-lg text-sm font-medium">Home</a>
+            <a href="login.html" class="bg-[#2D6A4F] text-white px-4 py-2 rounded-lg text-sm font-medium">Login</a>
+        </nav>
+    </header>
+
+    <section class="bg-gradient-to-br from-[#1B3A2D] via-[#2D6A4F] to-[#52B788] py-16 md:py-24 px-5 text-center text-white">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Pertanyaan yang Sering Diajukan</h1>
+        <p class="text-lg text-gray-100 max-w-2xl mx-auto">Temukan jawaban atas pertanyaan umum tentang 2 GOOD COURSE</p>
+    </section>
+
+    <main class="py-12 px-5">
+        <div class="max-w-2xl mx-auto space-y-8">
+
+            <div>
+                <h2 class="text-xl font-bold text-[#52B788] mb-4">Tentang Platform</h2>
+                <div class="space-y-2">
+                    <div class="accordion-item bg-white rounded-lg shadow-md border-l-4 border-[#52B788] cursor-pointer" onclick="this.classList.toggle('active')">
+                        <div class="p-4 flex justify-between items-center">
+                            <span class="font-semibold text-gray-800">Apa itu 2 GOOD COURSE?</span>
+                            <span class="chevron text-[#52B788]">▼</span>
+                        </div>
+                        <div class="accordion-content px-4 pb-4 text-gray-600 text-sm">Platform belajar coding online dengan mentor berpengalaman dan project-based learning, dari dasar hingga siap kerja.</div>
+                    </div>
+                    <div class="accordion-item bg-white rounded-lg shadow-md border-l-4 border-[#52B788] cursor-pointer" onclick="this.classList.toggle('active')">
+                        <div class="p-4 flex justify-between items-center">
+                            <span class="font-semibold text-gray-800">Siapa yang cocok bergabung?</span>
+                            <span class="chevron text-[#52B788]">▼</span>
+                        </div>
+                        <div class="accordion-content px-4 pb-4 text-gray-600 text-sm">Semua kalangan — mahasiswa, fresh graduate, maupun profesional yang ingin belajar coding dari level manapun.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="text-xl font-bold text-[#52B788] mb-4">Kursus & Sertifikat</h2>
+                <div class="space-y-2">
+                    <div class="accordion-item bg-white rounded-lg shadow-md border-l-4 border-[#2D6A4F] cursor-pointer" onclick="this.classList.toggle('active')">
+                        <div class="p-4 flex justify-between items-center">
+                            <span class="font-semibold text-gray-800">Kursus apa saja yang tersedia?</span>
+                            <span class="chevron text-[#2D6A4F]">▼</span>
+                        </div>
+                        <div class="accordion-content px-4 pb-4 text-gray-600 text-sm">Web Dev, Mobile Dev, UI/UX, dan Data Science — semua dengan learning path yang terstruktur jelas.</div>
+                    </div>
+                    <div class="accordion-item bg-white rounded-lg shadow-md border-l-4 border-[#2D6A4F] cursor-pointer" onclick="this.classList.toggle('active')">
+                        <div class="p-4 flex justify-between items-center">
+                            <span class="font-semibold text-gray-800">Ada sertifikat setelah selesai?</span>
+                            <span class="chevron text-[#2D6A4F]">▼</span>
+                        </div>
+                        <div class="accordion-content px-4 pb-4 text-gray-600 text-sm">Ya, sertifikat diakui industri setelah menyelesaikan kursus dan project capstone. Bisa ditambahkan ke LinkedIn.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="text-xl font-bold text-[#52B788] mb-4">Mentor & Akses</h2>
+                <div class="space-y-2">
+                    <div class="accordion-item bg-white rounded-lg shadow-md border-l-4 border-[#52B788] cursor-pointer" onclick="this.classList.toggle('active')">
+                        <div class="p-4 flex justify-between items-center">
+                            <span class="font-semibold text-gray-800">Bisa tanya ke mentor?</span>
+                            <span class="chevron text-[#52B788]">▼</span>
+                        </div>
+                        <div class="accordion-content px-4 pb-4 text-gray-600 text-sm">Ya! Via forum diskusi atau live mentoring bulanan. Mentor merespons dalam 24 jam.</div>
+                    </div>
+                    <div class="accordion-item bg-white rounded-lg shadow-md border-l-4 border-[#52B788] cursor-pointer" onclick="this.classList.toggle('active')">
+                        <div class="p-4 flex justify-between items-center">
+                            <span class="font-semibold text-gray-800">Berapa lama akses ke materi?</span>
+                            <span class="chevron text-[#52B788]">▼</span>
+                        </div>
+                        <div class="accordion-content px-4 pb-4 text-gray-600 text-sm">Seumur hidup, termasuk semua update materi di masa depan. Bisa belajar self-paced kapan saja.</div>
+                    </div>
+                </div>
+            </div>
 
         </div>
-    </header>
-    
+    </main>
+
+    <footer class="bg-[#1B3A2D] py-6 px-5 text-center">
+        <p class="text-white font-bold text-lg">© 2026 2 GOOD COURSE</p>
+    </footer>
+
 </body>
 </html>
