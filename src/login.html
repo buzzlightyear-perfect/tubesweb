@@ -1,75 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./output.css" rel="stylesheet">
-    <title>login</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <title>Login</title>
 </head>
 <body class="flex flex-col min-h-screen">
 
-    <header>
-        <div class="flex justify-between bg-[#1B3A2D] py-7 px-5 shadow-xl/30">
-            <h2 class="text-white font-bold">2 GOOD COURSE</h2>
+  <!-- Header -->
+  <header>
+    <div class="flex justify-between bg-[#1B3A2D] py-7 px-5 shadow-xl/30">
+      <h2 class="text-white font-bold">2 GOOD COURSE</h2>
+      <nav class="text-white">
+        <a href="home.html" class="bg-[#2D6A4F] px-5 py-2 rounded-xl">Home</a>
+      </nav>
+    </div>
+  </header>
 
-            <nav class=" text-white">
-                <a href="home.html" class=" bg-[#2D6A4F] px-5 py-2 rounded-xl ">Home</a>
-            </nav>
+  <!-- Spasi -->
+  <br><br>
 
-        </div>
-    </header>
+  <!-- Konten utama -->
+  <div class="flex flex-grow items-center justify-center bg-gray-100">
+    <div class="flex w-full max-w-4xl bg-white rounded-lg shadow-lg overflow-hidden">
 
-    <br></br>
-    <br></br>
-
-    <div class="flex flex-grow items-center justify-center bg-gray-100">
-  <div class="w-full max-w-sm bg-white rounded-lg shadow-lg p-6">
-    <h2 class="text-2xl font-bold text-center text-gray-800 mb-6">Login</h2>
-    
-    <form class="space-y-4">
-      <!-- Email -->
-      <div>
-        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-        <input
-          type="email"
-          id="email"
-          placeholder="Masukkan email"
-          class="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-          required
-        />
+      <!-- Bagian kiri: gambar daun -->
+      <div class="w-1/2 bg-cover bg-center" 
+           style="background-image: url('img/logo.png');">
       </div>
 
-      <!-- Password -->
-      <div>
-        <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
-        <input
-          type="password"
-          id="password"
-          placeholder="Masukkan password"
-          class="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-          required
-        />
+      <!-- Bagian kanan: form login -->
+      <div class="w-1/2 p-8">
+        <h2 class="text-2xl font-bold text-center text-[#1B3A2D] mb-6">Login</h2>
+
+        <form class="space-y-4">
+          <!-- Email -->
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Masukkan email"
+              class="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#1B3A2D]"
+              required
+            />
+          </div>
+
+          <!-- Password -->
+          <div>
+            <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Masukkan password"
+              class="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#1B3A2D]"
+              required
+            />
+          </div>
+
+          <!-- Tombol Login -->
+          <button
+            type="submit"
+            class="w-full rounded-md bg-[#1B3A2D] text-white py-2 font-semibold hover:bg-[#52B788] transition">
+            Login
+          </button>
+        </form>
+
+        <!-- Link tambahan -->
+        <p class="mt-4 text-center text-sm text-gray-600">
+          Belum punya akun?
+          <a href="daftar.html" class="text-[#2D6A4F] hover:underline">Daftar</a>
+        </p>
       </div>
-
-      <!-- Tombol Login -->
-      <button
-        type="submit"
-        class="w-full rounded-md bg-[#1B3A2D] text-white py-2 font-semibold hover:bg-[#52B788] transition">
-        Login
-      </button>
-    </form>
-
-    <!-- Link tambahan -->
-    <p class="mt-4 text-center text-sm text-gray-600">
-      Belum punya akun? 
-      <a href="daftar.html" class="text-blue-600 hover:underline">Daftar</a>
-    </p>
+    </div>
   </div>
-</div>
 
-  <br></br>
-
-    <footer class="bg-[#1B3A2D] py-6">
+  <!-- Footer -->
+  <br>
+  <footer class="bg-[#1B3A2D] py-6">
     <h1 class="text-white text-center font-bold text-lg">© 2026 2 GOOD COURSE</h1>
   </footer>
 
