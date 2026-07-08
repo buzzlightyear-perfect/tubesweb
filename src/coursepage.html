@@ -1,59 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Course Dashboard</title>
-  <link href="./output.css" rel="stylesheet">
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Course List - 2 Good Course</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{primary:'#1B3A2D',secondary:'#2D6A4F',accent:'#52B788'}}}}</script>
+  <style>body{font-family:'Segoe UI',sans-serif}</style>
 </head>
-<body class="bg-gray-100 min-h-screen flex flex-col">
+<body class="bg-gray-50 text-gray-800">
 
-  <!-- Navbar -->
-  <header>
-    <div class="flex justify-between bg-[#1B3A2D] py-7 px-5 shadow-xl">
-      <h2 class="text-white font-bold text-xl">2 GOOD COURSE</h2>
-      <nav class="text-white">
-        <a href="home.html" class="bg-[#2D6A4F] px-5 py-2 rounded-xl hover:bg-[#40916C] transition">Home</a>
-      </nav>
+  <nav class="bg-primary sticky top-0 z-50 shadow-md">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="index.html" class="text-white font-bold text-xl">2 <span class="text-accent">GOOD</span> COURSE</a>
+      <div class="flex gap-6 text-sm">
+        <a href="index.html" class="text-gray-300 hover:text-white">Home</a>
+        <a href="course.html" class="text-accent border-b border-accent">Courses</a>
+        <a href="mentor.html" class="text-gray-300 hover:text-white">Mentor</a>
+        <a href="login.html" class="text-gray-300 hover:text-white">Login</a>
+      </div>
     </div>
-  </header>
+  </nav>
 
-  <!-- Course Grid -->
-  <main class="flex-grow p-6">
-    <h1 class="text-2xl font-bold mb-6 text-gray-800">Available Courses</h1>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+  <section class="bg-primary text-white py-10 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h1 class="text-3xl font-bold mb-1">Course List</h1>
+      <p class="text-gray-300 text-sm">Pilih course dan mulai belajar coding bersama mentor berpengalaman.</p>
+    </div>
+  </section>
 
-      <!-- Course Card -->
-      <a href="coursepricing.html" class="block bg-white rounded-lg shadow hover:shadow-lg transition p-4">
-        <img src="https://iblu-academy.co.id/wp-content/uploads/2026/01/image-1-1024x574.png" alt="Course Image" class="rounded-lg mb-4">
-        <h2 class="text-lg font-semibold mb-2">How to Create Dashboard for Web Design</h2>
-        <p class="text-gray-600 text-sm mb-2">Price: $315.60 | Time: 6 months | Students: 70</p>
-      </a>
+  <section class="max-w-6xl mx-auto px-6 py-10">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
 
-      <a href="coursepricing.html" class="block bg-white rounded-lg shadow hover:shadow-lg transition p-4">
-        <img src="https://www.gamelab.id/uploads/modules/3%20(8).jpg?1638853694406" alt="Course Image" class="rounded-lg mb-4">
-        <h2 class="text-lg font-semibold mb-2">The Ultimate Drawing Course - Beginner to Advanced</h2>
-        <p class="text-gray-600 text-sm mb-2">Price: $315.60 | Time: 6 months | Students: 70</p>
-      </a>
+      <!-- Card template: nama · mentor · level · rating · harga · tombol -->
+      <div class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition p-5">
+        <h2 class="font-bold text-primary mb-1">Front-End Web Development</h2>
+        <p class="text-xs text-gray-400 mb-1">Muhammad Yasar Alghifari · <span class="bg-green-50 text-green-700 px-2 py-0.5 rounded-full">Beginner</span> · ⭐ 4.8</p>
+        <div class="flex justify-between items-center mt-4"><span class="font-bold text-secondary">Rp79.000</span><a href="course-detail.html" class="text-xs bg-primary text-white px-4 py-2 rounded-lg hover:bg-secondary transition">Lihat Detail</a></div>
+      </div>
 
-      <a href="coursepricing.html" class="block bg-white rounded-lg shadow hover:shadow-lg transition p-4">
-        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240701150157/Backend-Development.webp" alt="Course Image" class="rounded-lg mb-4">
-        <h2 class="text-lg font-semibold mb-2">Learn 3D Modelling - The Complete Blender</h2>
-        <p class="text-gray-600 text-sm mb-2">Price: $315.60 | Time: 6 months | Students: 70</p>
-      </a>
+      <div class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition p-5">
+        <h2 class="font-bold text-primary mb-1">Back-End Development</h2>
+        <p class="text-xs text-gray-400 mb-1">Bhaskoro Prayoga · <span class="bg-yellow-50 text-yellow-700 px-2 py-0.5 rounded-full">Intermediate</span> · ⭐ 4.7</p>
+        <div class="flex justify-between items-center mt-4"><span class="font-bold text-secondary">Rp149.000</span><a href="course-detail.html" class="text-xs bg-primary text-white px-4 py-2 rounded-lg hover:bg-secondary transition">Lihat Detail</a></div>
+      </div>
 
-      <a href="coursepricing.html" class="block bg-white rounded-lg shadow hover:shadow-lg transition p-4">
-        <img src="https://www.learncomputerscienceonline.com/wp-content/uploads/2022/01/Database-In-DBMS.jpg" alt="Course Image" class="rounded-lg mb-4">
-        <h2 class="text-lg font-semibold mb-2">Anatomy for Figure Drawing Mastering</h2>
-        <p class="text-gray-600 text-sm mb-2">Price: $315.60 | Time: 6 months | Students: 70</p>
-      </a>
+      <div class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition p-5">
+        <h2 class="font-bold text-primary mb-1">Full Stack Web Development</h2>
+        <p class="text-xs text-gray-400 mb-1">Fatih Rafif · <span class="bg-yellow-50 text-yellow-700 px-2 py-0.5 rounded-full">Intermediate</span> · ⭐ 4.9</p>
+        <div class="flex justify-between items-center mt-4"><span class="font-bold text-secondary">Rp199.000</span><a href="course-detail.html" class="text-xs bg-primary text-white px-4 py-2 rounded-lg hover:bg-secondary transition">Lihat Detail</a></div>
+      </div>
+
+      <div class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition p-5">
+        <h2 class="font-bold text-primary mb-1">UI/UX Design</h2>
+        <p class="text-xs text-gray-400 mb-1">Giya Cania · <span class="bg-green-50 text-green-700 px-2 py-0.5 rounded-full">Beginner</span> · ⭐ 4.6</p>
+        <div class="flex justify-between items-center mt-4"><span class="font-bold text-secondary">Rp99.000</span><a href="course-detail.html" class="text-xs bg-primary text-white px-4 py-2 rounded-lg hover:bg-secondary transition">Lihat Detail</a></div>
+      </div>
+
+      <div class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition p-5">
+        <h2 class="font-bold text-primary mb-1">JavaScript Fundamental</h2>
+        <p class="text-xs text-gray-400 mb-1">Bhaskoro Prayoga · <span class="bg-green-50 text-green-700 px-2 py-0.5 rounded-full">Beginner</span> · ⭐ 4.5</p>
+        <div class="flex justify-between items-center mt-4"><span class="font-bold text-secondary">Rp79.000</span><a href="course-detail.html" class="text-xs bg-primary text-white px-4 py-2 rounded-lg hover:bg-secondary transition">Lihat Detail</a></div>
+      </div>
+
+      <div class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition p-5">
+        <h2 class="font-bold text-primary mb-1">Git & GitHub</h2>
+        <p class="text-xs text-gray-400 mb-1">Fatih Rafif · <span class="bg-green-50 text-green-700 px-2 py-0.5 rounded-full">Beginner</span> · ⭐ 4.7</p>
+        <div class="flex justify-between items-center mt-4"><span class="font-bold text-secondary">Rp59.000</span><a href="course-detail.html" class="text-xs bg-primary text-white px-4 py-2 rounded-lg hover:bg-secondary transition">Lihat Detail</a></div>
+      </div>
 
     </div>
-  </main>
+  </section>
 
-  <!-- Footer -->
-  <footer class="bg-[#1B3A2D] py-6">
-    <h1 class="text-white text-center font-bold text-lg">© 2026 2 GOOD COURSE</h1>
+  <footer class="bg-primary text-gray-400 text-sm py-6 px-6">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <p class="text-white font-semibold">2 <span class="text-accent">GOOD</span> COURSE</p>
+      <p>&copy; 2024 2 Good Course.</p>
+    </div>
   </footer>
+
 </body>
 </html>
